@@ -1,0 +1,222 @@
+<style>
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-300px * 6));
+            transform: translateX(calc(-300px * 6));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-300px * 6));
+            transform: translateX(calc(-300px * 6));
+  }
+}
+.slider-2 {
+  background: pr;
+  height: 460px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider-2::before, .slider-2::after {
+  background: linear-gradient(to right, rgba(239, 242, 246, 100), rgba(239, 242, 246, 0) 100%);
+  content: "";
+  height: 400px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider-2::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+.slider-2::before {
+  left: 0;
+  top: 0;
+}
+
+.slider-2 .slide-track-2 {
+  -webkit-animation: scroll 60s linear reverse infinite;
+          animation: scroll 60s linear reverse infinite;
+  display: flex;
+  width: calc(300px * 12);
+}
+.slider-2 .testimonial-card {
+  width: 300px;
+  height: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 33px;
+  border-bottom: 10px solid #00e676;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.slider-2 .testimonial-card-2 {
+  width: 300px;
+  height: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 33px;
+  border-bottom: 10px solid #2979ff;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.slider-2 .testimonial-card-3 {
+  width: 300px;
+  height: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 33px;
+  border-bottom: 10px solid #7c4dff;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.slider-2 .testimonial-card-4 {
+  width: 300px;
+  height: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 33px;
+  border-bottom: 10px solid #ffd740;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.testimonial-profile {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Roboto, sans-serif;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  margin-right: 18px;
+}
+
+.profile {
+  display: block;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #091d41;
+}
+
+.profile-name {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+  font-weight: 700;
+  color: #091d41;
+}
+
+.testimonial-paragraph {
+  margin-top: 15px;
+  font-family: Roboto, sans-serif;
+  color: #091d41;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+</style>
+
+<div class="slider-2">
+	<div class="slide-track-2">
+		<div class="testimonial-card">
+        <div class="testimonial-profile"><img src="https://uploads-ssl.webflow.com/6030eb20edb26744961d31ee/609b4e976d637738b0819c8f_Avatar-1.png" loading="lazy" alt="" class="avatar">
+          <div class="profile"><span class="profile-name">Malek Barghout</span><br>800 Storage Dubai</div>
+        </div>
+        <p class="testimonial-paragraph">"Respond.io helps me to connect with all my customers and prospects through Whatsapp Api. The platform allowed my teams to work together and organize their tasks efficiently which lead to increased productivity and enhanced conversation quality."</p>
+      </div>
+      <div class="testimonial-card-2">
+        <div class="testimonial-profile"><img src="https://uploads-ssl.webflow.com/6030eb20edb26744961d31ee/609b4e966c040a10b4a65420_Avatar-2.png" loading="lazy" alt="" class="avatar">
+          <div class="profile"><span class="profile-name">Dorian Ferney</span><br>Biofile S.A.S.</div>
+        </div>
+        <p class="testimonial-paragraph">"Respond.io helps me to be more agile in the help center's service for my platform's users, by integrating more than 6 channels, we have all the traceability in one place."</p>
+      </div>
+      <div class="testimonial-card-3">
+        <div class="testimonial-profile"><img src="https://uploads-ssl.webflow.com/6030eb20edb26744961d31ee/609b4e97bff4f5654061139d_Avatar-3.png" loading="lazy" alt="" class="avatar">
+          <div class="profile"><span class="profile-name">Ilya Mitin</span><br>Compumit</div>
+        </div>
+        <p class="testimonial-paragraph">"You are probably the best chat support experience I had in years if not ever. One thing to point is the personal and eye-level approach over the chat. And fast respond."</p>
+      </div>
+      <div class="testimonial-card-4">
+        <div class="testimonial-profile"><img src="https://uploads-ssl.webflow.com/6030eb20edb26744961d31ee/609b9e90de5ab2b91b41fcab_Avatar-4.png" loading="lazy" alt="" class="avatar">
+          <div class="profile"><span class="profile-name">Alex Tay</span><br>TBM Sdn Bhd</div>
+        </div>
+        <p class="testimonial-paragraph">"Respond.io help us consolidate the incoming messages from various channels to form an organised and centralised messaging center. Easy to setup and very effective."</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-profile"><img src="https://uploads-ssl.webflow.com/6030eb20edb26744961d31ee/609e7c14b714d976d7694f11_Avatar-7.png" loading="lazy" alt="" class="avatar">
+          <div class="profile"><span class="profile-name">Au Tran</span><br>Revu Vietnam</div>
+        </div>
+        <p class="testimonial-paragraph">"If you are looking for a tool to manage your inbox, then leave it to respond.io.
+I have not seen any company that provides such a good support service. They are always available whenever I need them and always have detailed answers to every question and difficulty I am having."</p>
+      </div>
+      <div class="testimonial-card-2">
+        <div class="testimonial-profile"><img src="https://uploads-ssl.webflow.com/6030eb20edb26744961d31ee/609e7c147542cfbcaa051d90_Avatar-6.png" loading="lazy" alt="" class="avatar">
+          <div class="profile"><span class="profile-name">Christian Arenas</span><br>Efraín Casa de Pan</div>
+        </div>
+        <p class="testimonial-paragraph">"Thanks to respond.io we were able to consolidate 5 different channels into a single platform, making it easier to automate, monitor, and make changes."</p>
+      </div>
+			<div class="testimonial-card">
+        <div class="testimonial-profile"><img src="https://uploads-ssl.webflow.com/6030eb20edb26744961d31ee/609b4e976d637738b0819c8f_Avatar-1.png" loading="lazy" alt="" class="avatar">
+          <div class="profile"><span class="profile-name">Malek Barghout</span><br>800 Storage Dubai</div>
+        </div>
+        <p class="testimonial-paragraph">"Respond.io helps me to connect with all my customers and prospects through Whatsapp Api. The platform allowed my teams to work together and organize their tasks efficiently which lead to increased productivity and enhanced conversation quality."</p>
+      </div>
+      <div class="testimonial-card-2">
+        <div class="testimonial-profile"><img src="https://uploads-ssl.webflow.com/6030eb20edb26744961d31ee/609b4e966c040a10b4a65420_Avatar-2.png" loading="lazy" alt="" class="avatar">
+          <div class="profile"><span class="profile-name">Dorian Ferney</span><br>Biofile S.A.S.</div>
+        </div>
+        <p class="testimonial-paragraph">"Respond.io helps me to be more agile in the help center's service for my platform's users, by integrating more than 6 channels, we have all the traceability in one place."</p>
+      </div>
+      <div class="testimonial-card-3">
+        <div class="testimonial-profile"><img src="https://uploads-ssl.webflow.com/6030eb20edb26744961d31ee/609b4e97bff4f5654061139d_Avatar-3.png" loading="lazy" alt="" class="avatar">
+          <div class="profile"><span class="profile-name">Ilya Mitin</span><br>Compumit</div>
+        </div>
+        <p class="testimonial-paragraph">"You are probably the best chat support experience I had in years if not ever. One thing to point is the personal and eye-level approach over the chat. And fast respond."</p>
+      </div>
+      <div class="testimonial-card-4">
+        <div class="testimonial-profile"><img src="https://uploads-ssl.webflow.com/6030eb20edb26744961d31ee/609b9e90de5ab2b91b41fcab_Avatar-4.png" loading="lazy" alt="" class="avatar">
+          <div class="profile"><span class="profile-name">Alex Tay</span><br>TBM Sdn Bhd</div>
+        </div>
+        <p class="testimonial-paragraph">"Respond.io help us consolidate the incoming messages from various channels to form an organised and centralised messaging center. Easy to setup and very effective."</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-profile"><img src="https://uploads-ssl.webflow.com/6030eb20edb26744961d31ee/609e7c14b714d976d7694f11_Avatar-7.png" loading="lazy" alt="" class="avatar">
+          <div class="profile"><span class="profile-name">Au Tran</span><br>Revu Vietnam</div>
+        </div>
+        <p class="testimonial-paragraph">"If you are looking for a tool to manage your inbox, then leave it to respond.io.
+I have not seen any company that provides such a good support service. They are always available whenever I need them and always have detailed answers to every question and difficulty I am having."</p>
+      </div>
+      <div class="testimonial-card-2">
+        <div class="testimonial-profile"><img src="https://uploads-ssl.webflow.com/6030eb20edb26744961d31ee/609e7c147542cfbcaa051d90_Avatar-6.png" loading="lazy" alt="" class="avatar">
+          <div class="profile"><span class="profile-name">Christian Arenas</span><br>Efraín Casa de Pan</div>
+        </div>
+        <p class="testimonial-paragraph">"Thanks to respond.io we were able to consolidate 5 different channels into a single platform, making it easier to automate, monitor, and make changes."</p>
+      </div>
+	</div>      
+</div>
